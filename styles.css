@@ -44,11 +44,30 @@ ul li a {
 }
 
 
+
 footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
-    text-align: center;
+    text-align: left;
+    white-space: nowrap; 
+    overflow: hidden; 
 }
+
+
+footer p {
+    animation: scrollText 10s linear infinite; /* Анімація звідси */
+}
+
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%); /* Починається справа */
+    }
+    100% {
+        transform: translateX(-100%); /* Завершується зліва */
+    }
+}
+
 
 
