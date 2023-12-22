@@ -7,24 +7,40 @@
     <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
+    <script src="script.js"></script>
+
     <header>
         <h1>Практичні роботи</h1>
     </header>
-    <nav>
+
+    <div id="menu-button" class="menu-button">
+        <div class="menu-bar"></div>
+        <div class="menu-bar"></div>
+        <div class="menu-bar"></div>
+    </div>
+    <div id="menu" class="menu">
         <ul>
             <li><a href="index.html">Головна</a></li>
-            <li><a href="labs.html">Лабораторні роботи</a></li>
             <li><a href="practical.html">Практичні роботи</a></li>
             <li><a href="about.html">Про мене</a></li>
         </ul>
-    </nav>
+    </div>
+
     <section>
         <h2>Список практичних робіт</h2>
-        <ul>
-            <li><a href="Practises/prac1.html">Практична робота 1</a> - Таблиця з розкладом занять на місяць</li>
-            
-            
-        </ul>
+        <div class="practical-works">
+            <button class="work-button">
+                <a href="Practises/prac1.html">Практична робота 1</a> - Таблиця з розкладом занять на місяць
+            </button>
+
+            <button class="work-button">
+                <a href="Practises/prac2.html">Практична робота 2</a> - HTML форма
+            </button>
+            <button class="work-button">
+                <a href="Practises/task3.html">Практична робота 3</a> - Зміна сторінки без зміни html
+            </button>
+        </div>
+
     </section>
     <footer>
         <p>2023-2024 | Предмет - WEB технології | Група - КІД42 | Telegram: <a href = https://t.me/La_comrade>La_comrade</a> </p>

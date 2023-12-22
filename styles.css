@@ -1,10 +1,26 @@
 
 header {
-    background-color: #51e2f5;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+
 }
+
+a {
+    transition: color 0.3s ease;
+}
+
+a:link,
+a:visited {
+    color: #fbff00;
+}
+
+a:hover,
+a:active {
+    color: #ff85e4;
+}
+
 
 
 nav ul {
@@ -17,6 +33,7 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 20px;
+    
 }
 
 nav ul li a {
@@ -28,25 +45,26 @@ nav ul li a {
 
 section {
     margin: 20px;
+    color: #fff;
 }
 
 
 h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
+
     padding-bottom: 10px;
+    color: #fff;
 }
 
 
 ul li a {
-    color: #333;
+    color: #5804a7;
     text-decoration: none;
 }
 
 
 
 footer {
-    background-color: #51e2f5;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     color: #fff;
     padding: 20px;
     text-align: left;
@@ -96,7 +114,7 @@ nav ul li:hover {
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
 }
 
-
+/* Розклад (пр 1) */
 .schedule-table {
     border-collapse: collapse;
     width: 100%;
@@ -117,14 +135,17 @@ nav ul li:hover {
 
 .schedule-table th {
     background-color: #f2f2f2;
+    color: #000000;
 }
 
 .schedule-table tbody tr:nth-child(even) {
     background-color: #f2f2f2;
+
 }
 
 .schedule-table th:first-child, .schedule-table td:first-child {
     text-align: left;
+    color: #000000;
 }
 .schedule-table .highlight {
     background-color: #0fdf19;
@@ -137,6 +158,7 @@ nav ul li:hover {
     border-top: 2px solid #000;
     border-right: 2px solid #000;
     border-left: 2px solid #000;
+    color: #000000;
 }
 
 
@@ -144,6 +166,7 @@ nav ul li:hover {
     border-bottom: 2px solid #000;
     border-right: 2px solid #000;
     border-left: 2px solid #000;
+    color: #000000;
 }
 
 
@@ -151,22 +174,19 @@ nav ul li:hover {
     border-top: 2px solid #000;
     border-right: 2px solid #000;
     border-left: 2px solid #000;
+    color: #000000;
 }
 
 .schedule-table .sides {
     border-right: 2px solid #000;
     border-left: 2px solid #000;
+    color: #000000;
 }
 html, body {
     width: 100%;
     height:100%;
   }
   
-  body {
-      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-      background-size: 400% 400%;
-      animation: gradient 15s ease infinite;
-  }
   
   @keyframes gradient {
       0% {
@@ -183,3 +203,206 @@ html, body {
   .lfooter {
     padding-bottom: 100px; 
 }
+
+
+/* Стилі для меню */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background: #4f28bdb9;
+    transition: right 0.3s;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+.menu a:hover {
+    color: #fffb00;
+}
+
+.menu-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-bar {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 2px;
+}
+
+.menu.open {
+    right: 0;
+}
+
+.menu.open .menu-bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu.open .menu-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu.open .menu-bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Общий стиль */
+
+body {
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+/* Список практичних */
+.work-button {
+    background-color: #c300ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.practical-works {
+    list-style: none;
+    padding: 0;
+}
+
+.practical-works li {
+    margin-bottom: 10px;
+}
+
+.practical-works li:before {
+    content: "⚡";
+    margin-right: 10px;
+}
+
+/* Форма (пр 2) */
+
+.form-container {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 2px;
+    display: block;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background: #ffae00;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #2980b9;
+}
+
+input,
+select {
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border: 1px solid #3498db;
+    box-shadow: 0 0 3px rgba(52, 152, 219, 0.4);
+}
+
+.form-container {
+    animation: appear 0.5s ease-out;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form {
+    padding: 25px;
+}
+
+
+/* Прокрутка (стиль) */
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #C1C1C1;
+  }
+  
+  ::-webkit-scrollbar-button {
+    display: none; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; 
+  }
