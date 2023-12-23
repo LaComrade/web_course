@@ -1,0 +1,349 @@
+   <!DOCTYPE html>
+   <html lang="en">
+
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link type="images/png" rel="icon" href="images/icons8-youtube.png">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous" />
+     <link rel="stylesheet" href="css/style.css">
+     <title>Youtube </title>
+   </head>
+
+   <body>
+     <!--    header      -->
+     <header class="header">
+       <div class="header_container">
+         <div class="none"> </div>
+         <div class="search">
+           <input type="text" placeholder="Пошук">
+           <i class="fa-solid fa-magnifying-glass"></i>
+         </div>
+
+
+         <div class="user">
+           <div class="icon">
+             <i class="fa-solid fa-video"></i>
+             <i class="fa-solid fa-grip"></i>
+             <i class="fa-solid fa-bell"></i>
+           </div>
+
+           <div class="img">
+             <img src="images/logo.png" alt="">
+           </div>
+         </div>
+
+         <div class="toggle">
+           <i class="fa-solid fa-bars" id="header-toggle"></i>
+         </div>
+       </div>
+     </header>
+     <!--    header      -->
+
+
+     <!--    nav      -->
+     <section class="nav" id="navbar">
+       <nav class="nav_container">
+         <div>
+           <a href="#" class="nav_link nav_logo ">
+             <i class="fa-solid fa-bars nav_icon"></i>
+             <span class="logo_name">
+               <i class="fab fa-youtube"></i>
+               Youtube
+             </span>
+           </a>
+
+           <div class="nav_list">
+             <div class="nav_items navtop">
+               <a href="#" class="nav_link navtop active">
+                 <i class="fa fa-house nav_icon"></i>
+                 <span class="nav_name">Головна</span>
+               </a>
+               <a href="#" class="nav_link navtop">
+                 <i class="fa fa-compass nav_icon"></i>
+                 <span class="nav_name">Рекомендації</span>
+               </a>
+               <a href="#" class="nav_link navtop">
+                 <i class="fa-brands fa-tiktok nav_icon"></i>
+                 <span class="nav_name">Shorts</span>
+               </a>
+               <a href="#" class="nav_link navtop">
+                 <i class="fa-solid fa-users nav_icon"></i>
+                 <span class="nav_name">Канал</span>
+               </a>
+               <a href="#" class="nav_link navtop">
+                 <i class="fa-solid fa-video nav_icon"></i>
+                 <span class="nav_name">Бібліотека</span>
+               </a>
+               <a href="#" class="nav_link navtop">
+                 <i class="fa-solid fa-clock-rotate-left nav_icon"></i>
+                 <span class="nav_name">Історія</span>
+               </a>
+               <a href="#" class="nav_link navtop">
+                 <i class="fa-solid fa-thumbs-up nav_icon"></i>
+                 <span class="nav_name">Відео, що сподобалися</span>
+               </a>
+
+               <div class="nav_dropdown">
+                 <a href="#" class="nav_link">
+                   <i class="fa-solid fa-chevron-down nav_icon"></i>
+                   <span class="nav_name">Більше</span>
+                 </a>
+
+                 <div class="nav_dropdown-collapse">
+                   <div class="nav_dropdown-content">
+                     <a href="#" class="nav_dropdown-item">Підтримка</a>
+                     <a href="#" class="nav_dropdown-item">Правила</a>
+                     <a href="#" class="nav_dropdown-item">Справка</a>
+                   </div>
+                 </div>
+               </div>
+
+               <a href="#" class="nav_link">
+                 <i class="fa-solid fa-comment nav_icon"></i>
+                 <span class="nav_name">Повідомлення</span>
+               </a>
+             </div>
+
+             <div class="nav_items subscribe-container">
+               <h3 class="nav_subititle">Підписки</h3>
+
+               <a href="#" class="nav_link">
+                 <img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-people-victoruler-flat-victoruler-5.png" alt="">
+                 <span class="nav_name">Залужний</span>
+               </a>
+               <a href="#" class="nav_link">
+                 <img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-occupation-and-people-victoruler-flat-victoruler.png" />
+                 <span class="nav_name">Зеленський</span>
+               </a>
+               <a href="#" class="nav_link">
+                 <img class="subscribe" src="https://img.icons8.com/external-victoruler-linear-colour-victoruler/64/000000/external-boy-children-avatar-victoruler-linear-colour-victoruler-2.png" />
+                 <span class="nav_name">Міністерство Оборони</span>
+               </a>
+               <a href="#" class="nav_link">
+                 <img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-children-avatar-victoruler-flat-victoruler-12.png" />
+                 <span class="nav_name">Голобородько</span>
+               </a>
+
+
+               <div class="nav_dropdown">
+                 <a href="#" class="nav_link">
+                   <i class="fa-solid fa-chevron-down nav_icon"></i>
+                   <span class="nav_name">Більше підписок</span>
+                 </a>
+
+                 <div class="nav_dropdown-collapse nav_dropdown-second">
+                   <div class="nav_dropdown-content">
+                     <a href="#" class="nav_dropdown-items">
+                       <img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-children-avatar-victoruler-flat-victoruler-12.png" />
+                       <span class="nav_name">1+1</span>
+                     </a>
+                     <a href="#" class="nav_dropdown-items">
+                       <img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-children-avatar-victoruler-flat-victoruler-12.png" />
+                       <span class="nav_name">СТБ</span>
+                     </a>
+                     <a href="#" class="nav_dropdown-items">
+                       <img class="subscribe" src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-children-avatar-victoruler-flat-victoruler-12.png" />
+                       <span class="nav_name">Телемарафон</span>
+                     </a>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </nav>
+     </section>
+     <!--    nav      -->
+
+
+     <main>
+       <section class="video_content grid">
+         <div class="video_items">
+           <a>
+             <img src="images/video_images/1.jpg" alt="">
+           </a>
+           <div class="details flex">
+             <div class="img">
+               <img src="images/logo.png" alt="">
+             </div>
+             <div class="heading">
+               <p>Люди, що ж це коїться!!! </p>
+               <span>Головний націоналіст <i class="fa fa-circle-check"></i> </span>
+               <span>0 . 1 Рік назад</span>
+             </div>
+           </div>
+         </div>
+         <div class="video_items">
+           <a>
+             <img src="images/video_images/2.jpg" alt="">
+           </a>
+           <div class="details flex">
+             <div class="img">
+               <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-people-victoruler-flat-victoruler-5.png" />
+             </div>
+             <div class="heading">
+               <p>Перемога вже 15 травня</p>
+               <span>Галина <i class="fa fa-circle-check"></i> </span>
+               <span>1M . 1 Рік назад</span>
+             </div>
+           </div>
+         </div>
+         <div class="video_items">
+           <a>
+             <img src="images/video_images/3.jpg" alt="">
+           </a>
+           <div class="details flex">
+             <div class="img">
+               <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-occupation-and-people-victoruler-flat-victoruler.png" />
+             </div>
+             <div class="heading">
+               <p>ШОК!!! ЗЕЛЕНСЬКИЙ ПОВЕРНУВ ЗАПОРІЗЬКУ СІЧ???</p>
+               <span>Телемарафон <i class="fa fa-circle-check"></i> </span>
+               <span>101M . 1 День назад</span>
+             </div>
+           </div>
+         </div>
+         <div class="video_items">
+           <a>
+             <img src="images/video_images/4.jpg" alt="">
+           </a>
+           <div class="details flex">
+             <div class="img">
+               <img src="https://img.icons8.com/external-victoruler-linear-colour-victoruler/64/000000/external-boy-children-avatar-victoruler-linear-colour-victoruler-2.png" />
+             </div>
+             <div class="heading">
+               <p>Уже уничтожен 15 999 леопард ВСУ !!!!!!1!</p>
+               <span>Правда.ру <i class="fa fa-circle-check"></i> </span>
+               <span>144M . 2 Роки назад</span>
+             </div>
+           </div>
+         </div>
+         <div class="video_items">
+           <a>
+             <img src="images/video_images/5.jpg" alt="">
+           </a>
+           <div class="details flex">
+             <div class="img">
+               <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-children-avatar-victoruler-flat-victoruler-12.png" />
+             </div>
+             <div class="heading">
+               <p>Путін вирішив продати Китаю Сибір</p>
+               <span>Новини <i class="fa fa-circle-check"></i> </span>
+               <span>50.1M . 5 Дні назад</span>
+             </div>
+           </div>
+         </div>
+         <div class="video_items">
+           <a>
+             <img src="images/video_images/6.jpg" alt="">
+           </a>
+           <div class="details flex">
+             <div class="img">
+               <img src="images/logo.png" alt="">
+             </div>
+             <div class="heading">
+               <p>ВАЖЛИВО! Путіна знайдемо мертвим після продажу Сибірі</p>
+               <span>News <i class="fa fa-circle-check"></i> </span>
+               <span>342M . 3 Дні назад</span>
+             </div>
+           </div>
+         </div>
+         <div class="video_items">
+           <a>
+             <img src="images/video_images/7.jpg" alt="">
+           </a>
+           <div class="details flex">
+             <div class="img">
+               <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-people-victoruler-flat-victoruler-5.png" />
+             </div>
+             <div class="heading">
+               <p>Після смерті Путіна росію охопила громадянська війна!</p>
+               <span>Новини UA <i class="fa fa-circle-check"></i> </span>
+               <span>255M . 2 Дні назад</span>
+             </div>
+           </div>
+         </div>
+         <div class="video_items">
+            <a>
+             <img src="images/video_images/8.jpg" alt="">
+           </a>
+           <div class="details flex">
+             <div class="img">
+               <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-occupation-and-people-victoruler-flat-victoruler.png" />
+             </div>
+             <div class="heading">
+               <p>НА ТЛІ ГРОМАДЯНСЬКОЇ ВІЙНИ В РОСІЇ УКРАЇНА ПОВЕРТАЄ ТЕРИТОРІЇ</p>
+               <span>Новини UA <i class="fa fa-circle-check"></i> </span>
+               <span>122M . 2 Дні назад</span>
+             </div>
+           </div>
+         </div>
+         <div class="video_items">
+            <a>
+             <img src="images/video_images/9.jpg" alt="">
+           </a>
+           <div class="details flex">
+             <div class="img">
+               <img src="https://img.icons8.com/external-victoruler-linear-colour-victoruler/64/000000/external-boy-children-avatar-victoruler-linear-colour-victoruler-2.png" />
+             </div>
+             <div class="heading">
+               <p>Знайдено вбивцю путіна</p>
+               <span>News <i class="fa fa-circle-check"></i> </span>
+               <span>52M . 1 День назад</span>
+             </div>
+           </div>
+         </div>
+         <div class="video_items">
+           <a>
+             <img src="images/video_images/10.jpg" alt="">
+           </a>
+           <div class="details flex">
+             <div class="img">
+               <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-children-avatar-victoruler-flat-victoruler-12.png" />
+             </div>
+             <div class="heading">
+               <p>Україну прийняли в ЄС !</p>
+               <span>Новини UA <i class="fa fa-circle-check"></i> </span>
+               <span>189M . 1 День назад</span>
+             </div>
+           </div>
+         </div>
+         <div class="video_items">
+            <a>
+             <img src="images/video_images/11.jpg" alt="">
+           </a>
+           <div class="details flex">
+             <div class="img">
+               <img src="images/logo.png" alt="">
+             </div>
+             <div class="heading">
+               <p>ОРБАН ПОМЕР ВІД ІНФАРКТУ</p>
+               <span>ЄС Новини <i class="fa fa-circle-check"></i> </span>
+               <span>92.7M . 1 Годину назад</span>
+             </div>
+           </div>
+         </div>
+         <div class="video_items">
+            <a>
+             <img src="images/video_images/12.jpg" alt="">
+           </a>
+           <div class="details flex">
+             <div class="img">
+               <img src="https://img.icons8.com/external-victoruler-flat-victoruler/64/000000/external-boy-people-victoruler-flat-victoruler-5.png" />
+             </div>
+             <div class="heading">
+               <p>Зеленський заявив, що готовий прийняти США як 25 область України</p>
+               <span>Новини UA <i class="fa fa-circle-check"></i> </span>
+               <span>567.1M . Менше години назад</span>
+             </div>
+           </div>
+
+       </section>
+     </main>
+
+
+     <script src="js/main.js" charset="utf-8"></script>
+   </body>
+
+   </html>
