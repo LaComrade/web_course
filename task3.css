@@ -1,67 +1,71 @@
-li:first-child {
-  font-weight: bold;
+.ul-nav>li:first-child {
+    font-weight: 600;
 }
 
-a:last-child {
-  color: red;
+a {
+    color: red;
 }
 
-input:disabled {
-  background-color: gray;
+input[disabled] {
+    background-color: #ccc;
 }
 
-div > p {
-  font-weight: 600; 
+div>p {
+    font-weight: bold;
+
 }
 
 [href^="https"] {
-  color: green;
+    color: green;
 }
 
 input[type="text"] {
-  border: 1px solid blue;
+    border: 1px solid blue
 }
 
-li:first-child, 
+li:first-child,
 li:last-child {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 div p {
-  font-size: 16px;
-}  
-
-input:checked {
-  background-color: lightblue;
+    font-size: 16px;
 }
 
-li > a {
-  text-decoration: underline;
+
+input[checked] {
+    background-color: rgb(137, 203, 224);
+
+}
+
+
+li>a {
+    text-decoration: underline;
 }
 
 li:nth-child(even) {
-  font-weight: bold;
+    font-weight: bold;
 }
 
-input[type="text"]:not(:disabled) {
-  background-color: gray;
+
+input[type="text"]:not([disabled]) {
+    background-color: gray;
 }
 
-p:first-child {
-  font-size: 24px;
+
+:p:first-child {
+    font-size: 24px;
 }
 
-li.special + li {
-  text-decoration: line-through;
+.special+li {
+    text-decoration: line-through;
 }
 
 p::first-letter {
-  font-size: 36px;
+    font-size: 36px;
 }
 
 a::after {
-  content: "↗";
+    content: "↗";
 }
-
-
 
